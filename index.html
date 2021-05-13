@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+    </head>
+    <body>
+        <center><img src="./Images/Logo.PNG" alt="logo"></center>
+        <center><h1><b>Saylani Online Academy</b></h1></center>
+        <form action="Submitted.html">
+            <center><h2><b>Student Registration Form</b></h2></center>
+            <table>
+                <tr>
+                    <td><label>Name:</label></td>
+                    <td><input type="text"placeholder="Name" size="35" maxlength="20" required="required"> </td>
+                </tr>
+                <tr>
+                    <td><label>FatherName:</label></td>
+                    <td><input type="text" placeholder="Father Name" size="35" maxlength="20" required="required" /></td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label></td>
+                    <td><input type="password" placeholder="*********" size="35" maxlength="20" required="required" /></td>
+                </tr>
+                <tr>
+                    <td><label>Address:</label></td>
+                    <td><textarea name="comments" cols="37" rows="4" required="required">Address</textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                        <td>
+                            <input required="required" type="radio" name="gender" value="male"/> Male
+                            <input required="required" type="radio" name="gender" value="female"/>Female
+                         </td>
+                </tr>
+                <tr>
+                    <td><label>Language:</label></td>
+                    <td>
+                        <input type="checkbox" name="language" value="English" />English
+                        <input type="checkbox" name="language" value="Urdu" />Urdu
+                        <input type="checkbox" name="language" value="Arabic" />Arabic
+                        <input type="checkbox" name="language" value="Chines" />Chines
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>DOB:</label></td>
+                    <td>
+                        <input required="required" type="date" id="birthday" name="birthday" size="35">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Email Id:</label></td>
+                    <td>
+                        <input required="required" type="text" name="email"size="35" placeholder="Email ID" maxlength="30"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Mobile Number:</label></td>
+                    <td>
+                        <input required="required" type="text" name="email"size="35" placeholder="Mobile Number" maxlength="30"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>City:</label></td>
+                    <td>
+                        <select name="devices">
+                            <option>Select your city</option>
+                            <option value="Hyderabad">Hyderabd</option>
+                            <option value="Karachi">Karachi</option>
+                            <option value="Lahore">Lahore</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Hobbies:</label></td>
+                    <td>
+                        <select name="Games" size="4" multiple="multiple">
+                            <option value="cricket" selected="selected">Cricket</option>
+                            <option value="footbal">Football</option>
+                            <option value="Hokey">Hokey</option>
+                            <option value="Tennis">Tennis</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Picture Upload:
+                            <td>
+                                <input type="file" id="img" name="img" accept="image/*">
+                            </td>
+                        </label>
+                    </td>
+                    <td><button href="Submitted.html" value="upload">Upload</button></td>
+                </tr>
+            </table>
+            <center><button href="Submitted.html" value="upload">Submit Form</button></center>
+        </form>
+    </body>
+</html>
